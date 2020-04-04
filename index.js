@@ -1,8 +1,7 @@
 const express = require('express');
 const app = express();
-const date = {
-    month: 1,
-    year: 2000,
-};
+const routes = require('./router');
+
+app.use(routes);
 
 app.listen(3333);
